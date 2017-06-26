@@ -3,7 +3,7 @@
 	y lo muestro por 'getElementById' al presionar el botón 'MOSTRAR'
 */
 function Mostar()
-{
+{var 
 	
 }
 
