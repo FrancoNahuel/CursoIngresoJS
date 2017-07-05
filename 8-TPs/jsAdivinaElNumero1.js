@@ -9,9 +9,17 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos;
+var numUsuario;
 
 function comenzar()
-{
+
+{ 
+
+  numeroSecreto = Math.parseInt (random ()* (100-1))+1;
+  
+  console.log ("numeroSecreto");
+  contadorIntentos= 0;
+
 	//Genero el número RANDOM entre 1 y 100
 	 
 		//alert(numeroSecreto );
@@ -20,7 +28,29 @@ function comenzar()
 }
 
 function verificar()
+{  
+  contadorIntentos ++;
+  
+  numUsuario = document.getElementById ("numeroUsuario");
+  if  (numeroSecreto == numUsuario)
+  {
+    alert ("gano en"+ contadorIntentos + "intentos" )
+
+  }
+else
 {
-	
+  if (numUsuario < numeroSecreto)
+  {
+    alert ("falta...")
+  }
+  else
+  {
+    if (numeroSecreto < numUsuario)
+    {
+      alert ("se pasò...")
+    }
+
+  }
+}
 	
 }
