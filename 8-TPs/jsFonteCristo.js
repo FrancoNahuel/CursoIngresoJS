@@ -7,23 +7,32 @@ c.	Se pedirán un número positivo y se mostrará la cantidad de números divisi
 d.	Se pedirán un número positivo y se mostrará si el número es un número primo o no.
 e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos desde el número ingresado hasta el cero.
 */
-function NumerosPares ()
+ function NumerosPares ()
+
 {
+    
 var num 
 var contPares
 contPares=0
+ for (i=1; i<num; i++)
 num=document.getElementById("num").value
   {
       if (num<1)
       {alert ("Se necesita un numero positivo") 
     }
     else
-    {
-        for (i=1; i<num; i++)
-        if(i%2==0)
-        {contPares++
-            }
-    }      
-  }   alert ("Es par")
-
+    { 
+       if(i%2==0)
+        {
+        contPares++
+         }
+         else 
+         {
+             ("Es impar")
+         
+         
+    }
+    }     
+     alert ("Es par")
+  }
 }
